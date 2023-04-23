@@ -26,11 +26,11 @@ message = "Hello, my password is testpassword123"
 #print(encrypted_message)
 
 # make a file : encrypted.message
-#with open("encrypted.message", "wb") as f:
+#with open("encrypted.message", "wb") as f: # wb is write byte
 #    f.write(encrypted_message)
 
 # open encrypted file
-encrypted_message = open("encrypted.message", "rb").read()
+encrypted_message = open("encrypted.message", "rb").read()  # rb is read byte
 # decrypt using private key
 clear_message = rsa.decrypt(encrypted_message, private_key)
 # check
