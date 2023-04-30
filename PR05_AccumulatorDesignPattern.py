@@ -19,6 +19,7 @@ def accum(string):
         # retype the rest by its index
         while retype_length != 0:
             print(string.lower()[index],end="")
+            # decrement loop
             retype_length -= 1
 
         if (index+1) < len(string):
