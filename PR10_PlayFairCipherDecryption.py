@@ -12,7 +12,7 @@ def key_matrix_generation(key):
     for i in key:
         if i in letters_lc:
             key_matrix[index] += i
-            # we need to remove duplicate letters
+            # we need to remove duplicate letters and replace them with '.'
             letters_lc = letters_lc.replace(i, '.')
             # check the progression
             #print(letters_lc)
