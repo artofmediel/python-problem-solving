@@ -64,5 +64,5 @@ for line in range(5):
 
 for die in dice:
     total += die
-# check
+# check output
 print(f"total: {total}")
