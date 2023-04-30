@@ -83,6 +83,7 @@ def main():
     print("Message : " + message)
     valid_text = True
 
+    # accept only letters
     for i in message:
         if i in string.ascii_lowercase:
             valid_text = True
